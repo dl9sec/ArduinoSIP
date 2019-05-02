@@ -1,6 +1,6 @@
 # ArduinoSIP
 Arduino SIP library with UDP communications. Original class and methods authored by Juergen Liegner (SIP protocoll not fully implemented).
-Can be used do do a SIP call through e.g. a FRITZ!Box.
+Can be used do do a notifying SIP call through e.g. a FRITZ!Box.
 
 # Prequisites
 
