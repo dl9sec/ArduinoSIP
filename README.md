@@ -1,5 +1,5 @@
 # ArduinoSIP
-Arduino SIP library with UDP communications. Original class and methods authored by Juergen Liegner (SIP protocoll not fully implemented).
+Arduino SIP library with UDP communications. Original class and methods authored by Juergen Liegner (SIP protocoll not fully implemented. Discussed at https://www.mikrocontroller.net/topic/444994).
 Can be used do do a notifying SIP call through e.g. a FRITZ!Box.
 
 Tested with NodeMCU 1.0 (AI-Thinker ESP8266MOD ESP-12E).
