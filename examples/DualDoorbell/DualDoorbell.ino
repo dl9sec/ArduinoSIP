@@ -53,7 +53,7 @@
 //------------------------------------------------
 
 // WiFi parameters
-const char* WiFiSSID    = "myWiFiSSID";			// WiFi SSID
+const char* WiFiSSID    = "myWiFiSSID";		// WiFi SSID
 const char* WiFiPSK     = "myWiFiPreSharedKey";	// WiFi WPA2 preshared key
 
 const char *WiFiIP      = "192.168.2.69";   	// WiFi IP of the ESP
@@ -63,15 +63,15 @@ const char *WiFiDNS     = "192.168.2.1";    	// WiFi DNS
 
 
 // Sip parameters
-const char *SipIP       = "192.168.2.1"; 		// IP of the FRITZ!Box
-const int   SipPORT     = 5060;					// SIP port of the FRITZ!Box
-const char *SipUSER     = "Doorbell"; 			// SIP-Call username at the FRITZ!Box
-const char *SipPW  	    = "SIP-Password";  		// SIP-Call password at the FRITZ!Box
+const char *SipIP       = "192.168.2.1"; 	// IP of the FRITZ!Box
+const int   SipPORT     = 5060;		        // SIP port of the FRITZ!Box
+const char *SipUSER     = "Doorbell"; 	        // SIP-Call username at the FRITZ!Box
+const char *SipPW  	= "SIP-Password";       // SIP-Call password at the FRITZ!Box
 
 // Dial parameters
-const char *SipDIAL     = "**9";          		// Dial number
-const char *SipTEXT_1   = "Doorbell #1";		// Dial text 1 for doorbell #1
-const char *SipTEXT_2   = "Doorbell #2"; 		// Dial text 2 for doorbell #2
+const char *SipDIAL     = "**9";          	// Dial number
+const char *SipTEXT_1   = "Doorbell #1";	// Dial text 1 for doorbell #1
+const char *SipTEXT_2   = "Doorbell #2"; 	// Dial text 2 for doorbell #2
 
 //------------------------------------------------
 
@@ -100,8 +100,8 @@ void setup()
   pinMode(LED_ESP12E, OUTPUT);
   pinMode(LED_NODEMCU, OUTPUT);
 
-  pinMode(12, INPUT_PULLUP);
-  pinMode(13, INPUT_PULLUP);
+  pinMode(4, INPUT_PULLUP);
+  pinMode(5, INPUT_PULLUP);
 
   digitalWrite(LED_ESP12E, 1);  // LED off
   digitalWrite(LED_NODEMCU, 1); // LED off
@@ -122,7 +122,7 @@ void setup()
   if ( String(WiFiSSID) != WiFi.SSID() )
   {
     Serial.print("Wifi initializing...\r\n");
-	WiFi.begin(WiFiSSID, WiFiPSK);
+    WiFi.begin(WiFiSSID, WiFiPSK);
   }
   
   while ( WiFi.status() != WL_CONNECTED )
@@ -143,15 +143,12 @@ void setup()
 
 void loop(void)
 {
-  int packetSize;
-  
   // SIP processing
   aSip.Processing(acSipIn, sizeof(acSipIn));
 
-
   // Doorbell handling begin ===========================
   
-   if ( digitalRead(4) == LOW )
+  if ( digitalRead(4) == LOW )
   {
     aSip.Dial(SipDIAL, SipTEXT_1);
   }
