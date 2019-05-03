@@ -1,0 +1,5 @@
+Sip			KEYWORD1
+Init		KEYWORD2
+Processing	KEYWORD2
+Dial		KEYWORD2
+IsBusy		KEYWORD2
