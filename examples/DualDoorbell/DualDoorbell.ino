@@ -7,7 +7,8 @@
    (https://wernze-home.net/wordpress/hobbys/arduino-esp8266-tuerklingel/)
    
    Copyright (c) 2019 Thorsten Godau (dl9sec)
-   (Did some optimizations, extensions and beautification of Florian's code)
+   (Did some optimizations, extensions and beautification of Florian's code
+   and integrated the library)
    
 
    Redistribution and use in source and binary forms, with or without
@@ -53,25 +54,25 @@
 //------------------------------------------------
 
 // WiFi parameters
-const char* WiFiSSID    = "myWiFiSSID";		// WiFi SSID
+const char* WiFiSSID    = "myWiFiSSID";		      // WiFi SSID
 const char* WiFiPSK     = "myWiFiPreSharedKey";	// WiFi WPA2 preshared key
 
-const char *WiFiIP      = "192.168.2.69";   	// WiFi IP of the ESP
-const char *WiFiGW      = "192.168.2.1";    	// WiFi GW
-const char *WiFiNM      = "255.255.255.0";  	// WiFi NM
-const char *WiFiDNS     = "192.168.2.1";    	// WiFi DNS
+const char *WiFiIP      = "192.168.2.69";   	  // WiFi IP of the ESP
+const char *WiFiGW      = "192.168.2.1";    	  // WiFi GW
+const char *WiFiNM      = "255.255.255.0";  	  // WiFi NM
+const char *WiFiDNS     = "192.168.2.1";    	  // WiFi DNS
 
 
 // Sip parameters
-const char *SipIP       = "192.168.2.1"; 	// IP of the FRITZ!Box
-const int   SipPORT     = 5060;		        // SIP port of the FRITZ!Box
+const char *SipIP       = "192.168.2.1"; 	      // IP of the FRITZ!Box
+const int   SipPORT     = 5060;		              // SIP port of the FRITZ!Box
 const char *SipUSER     = "Doorbell"; 	        // SIP-Call username at the FRITZ!Box
-const char *SipPW  	= "SIP-Password";       // SIP-Call password at the FRITZ!Box
+const char *SipPW  	   = "SIP-Password";        // SIP-Call password at the FRITZ!Box
 
 // Dial parameters
-const char *SipDIAL     = "**9";          	// Dial number
-const char *SipTEXT_1   = "Doorbell #1";	// Dial text 1 for doorbell #1
-const char *SipTEXT_2   = "Doorbell #2"; 	// Dial text 2 for doorbell #2
+const char *SipDIAL     = "**9";          	    // Dial number
+const char *SipTEXT_1   = "Doorbell #1";	      // Dial text 1 for doorbell #1
+const char *SipTEXT_2   = "Doorbell #2"; 	      // Dial text 2 for doorbell #2
 
 //------------------------------------------------
 
