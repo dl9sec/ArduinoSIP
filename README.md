@@ -22,7 +22,7 @@ Because of this, _"architectures"_ in _"library.properties"_ is currently set to
   * Install Aypac's "Arduino-TR-064-SOAP-Library" from https://github.com/Aypac/Arduino-TR-064-SOAP-Library to your Arduino library path.
   * Set up a net FRITZ!Box user for interaction with the TR-064 SOAP interface:<br>
  `System -> FRITZ!Box-Benutzer -> Benutzer: Benutzer hinzufügen -> Benutzername / Kennwort, Berechtigungen: Fritz!Box Einstellungen / Sprachnachrichten, Faxnachrichten, FRITZ!App Fon und Anrufliste / Smart Home`
-  * Follow the setup assistant. Benutzername (Username) will be used for "FbApiUSER" and Kennwort (Password) will be used for "FbApiPW" in the code. Check the mentioned boxes for that user.
+  * Follow the setup assistant. "Benutzername" (Username) will be used for "FbApiUSER" and "Kennwort" (Password) will be used for "FbApiPW" in the code. Check the mentioned boxes for that user.
 
 *Maybe someone can give me the correct translations from an english localized FRITZ!Box browser interface.*
 
