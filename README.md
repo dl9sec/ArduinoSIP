@@ -12,12 +12,12 @@ Because of this, _"architectures"_ in _"library.properties"_ is currently set to
   * Grant access for applications to the FRITZ!Box:<br>
    `Heimnetz -> Netzwerk -> Netzwerkeinstellungen -> Heimnetzfreigaben: Zufriff für Anwendungen zulassen / Statusinformationen über UPnP übertragen`
   
-* **For SIP call functionality (DualDoorbell and LaundryNotifier example)**
+* **For SIP call functionality ("DualDoorbell" and "LaundryNotifier" example)**
   * The ESP8266 acts as a VOIP telephone for the FRITZ!Box, so a new phone has to be set up:<br>
  `Telefonie -> Telefoniegeräte -> Neues Gerät einrichten: Telefon (mit und ohne Anrufbeantworter) -> LAN/WLAN (IP-Telefon) -> Benutzername / Kennwort ...`
   * Follow the setup assistant. Benutzername (Username) will be used for "SipUSER" and Kennwort (Password) will be used for "SipPW" in the code. 
 
-* **For TR-064 SOAP communications (LaundryNotifier example)**
+* **For TR-064 SOAP communications ("LaundryNotifier" example)**
   * Install Aypac's "Arduino-TR-064-SOAP-Library" from https://github.com/Aypac/Arduino-TR-064-SOAP-Library to your Arduino library path.
   * Set up a net FRITZ!Box user for interaction with the TR-064 SOAP interface:<br>
  `System -> FRITZ!Box-Benutzer -> Benutzer: Benutzer hinzufügen -> Benutzername / Kennwort, Berechtigungen: Fritz!Box Einstellungen / Sprachnachrichten, Faxnachrichten, FRITZ!App Fon und Anrufliste / Smart Home`
@@ -31,5 +31,5 @@ Because of this, _"architectures"_ in _"library.properties"_ is currently set to
   <dt>DualDoorbell</dt>
   <dd>A dual doorbell example adapted from Florian Wernze (see https://wernze-home.net/wordpress/hobbys/arduino-esp8266-tuerklingel/).</dd>
   <dt>ToDo: LaundryNotifier</dt>
-  <dd>A laundry notifier example based on the dual doorbell example using the TR-064 SOAP library (https://github.com/Aypac/Arduino-TR-064-SOAP-Library) to aquire the power information from two home automation smart plugs and notify via SIP call, that the washing machine and/or dryer is ready.</dd>
+  <dd>A laundry notifier example using the TR-064 SOAP library (https://github.com/Aypac/Arduino-TR-064-SOAP-Library) to aquire the power information from two home automation smart plugs and notify via SIP call, that the washing machine and/or dryer is ready.</dd>
   
