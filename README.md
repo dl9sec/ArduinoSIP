@@ -18,6 +18,7 @@ Because of this, _"architectures"_ in _"library.properties"_ is currently set to
   * Follow the setup assistant. Benutzername (Username) will be used for "SipUSER" and Kennwort (Password) will be used for "SipPW" in the code. 
 
 * **For TR-064 SOAP communications ("LaundryNotifier" example)**
+  * You need at least a FRITZ!DECT 200 (10A max.) or FRITZ!DECT 210 (15A max.) depending on your laundry devices. The example is made for two devices.
   * Install Aypac's "Arduino-TR-064-SOAP-Library" from https://github.com/Aypac/Arduino-TR-064-SOAP-Library to your Arduino library path.
   * Set up a net FRITZ!Box user for interaction with the TR-064 SOAP interface:<br>
  `System -> FRITZ!Box-Benutzer -> Benutzer: Benutzer hinzufügen -> Benutzername / Kennwort, Berechtigungen: Fritz!Box Einstellungen / Sprachnachrichten, Faxnachrichten, FRITZ!App Fon und Anrufliste / Smart Home`
