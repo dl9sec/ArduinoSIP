@@ -31,6 +31,6 @@ Because of this, _"architectures"_ in _"library.properties"_ is currently set to
 <dl>
   <dt>DualDoorbell</dt>
   <dd>A dual doorbell example adapted from Florian Wernze (see https://wernze-home.net/wordpress/hobbys/arduino-esp8266-tuerklingel/).</dd>
-  <dt>ToDo: LaundryNotifier</dt>
-  <dd>A laundry notifier example using the TR-064 SOAP library (https://github.com/Aypac/Arduino-TR-064-SOAP-Library) to aquire the power information from two home automation smart plugs and notify via SIP call, that the washing machine and/or dryer is ready.</dd>
+  <dt>LaundryNotifier</dt>
+  <dd>A laundry notifier example using the TR-064 SOAP library (https://github.com/Aypac/Arduino-TR-064-SOAP-Library) to aquire the power information from two home automation smartplugs and notify via SIP call, that the washing machine and/or dryer is ready.</dd>
   
