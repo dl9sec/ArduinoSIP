@@ -2,7 +2,7 @@
 Arduino SIP library with UDP communications. Original class and methods authored by Juergen Liegner (SIP protocoll not fully implemented. Discussed at https://www.mikrocontroller.net/topic/444994).
 Can be used do do a notifying SIP call through e.g. a FRITZ!Box.
 
-Tested with NodeMCU 1.0 (AI-Thinker ESP8266MOD ESP-12E).
+Tested with NodeMCU 1.0 (AI-Thinker ESP8266MOD ESP-12E) and D1 mini clone (ESP8266MOD ESP-12F).
 Because of this, _"architectures"_ in _"library.properties"_ is currently set to _"esp8266"-only_. If you want to use the library on another Arduino architecture, replace the _"esp8266"_ with a _"*"_ and let me know, if it works.
 
 # Prequisites for the examples
